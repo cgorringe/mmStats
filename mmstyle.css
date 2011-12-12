@@ -1,0 +1,100 @@
+/* Stylesheet for mmStats */
+
+body {
+  color:#ccc;
+  background-color:#222;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:11pt;
+}
+img { border:0; }
+
+h1,h2,h3,h4,h5,h6 {
+  margin:0; padding:0;
+}
+h1 { font-size:20pt; }
+h2 { font-size:16pt; }
+
+h2 a, h2 a:visited {
+  text-decoration: none;
+  color: #c8b;
+}
+h2 a:hover {
+  text-decoration: underline;
+}
+
+.col {
+  float:left;
+  text-align: center;
+  width:30%;
+  margin:6px;
+} 
+.clear {
+  clear:both;
+}
+
+table.statTable {
+  border-collapse:separate;
+  border-spacing:0;
+  background-color:#334;
+  color:#fff;
+  /* width:30%; */
+}
+table.statTable th,td {
+  padding:2px 4px;
+}
+table.statTable caption {
+  padding:2px 1em;
+  font-weight:bold;
+  color:#000;
+  background-color:#88a;
+  border-top:1px solid #bbd;
+  border-left:1px solid #bbd;
+  border-right:1px solid #002;
+  border-bottom:1px solid #002;
+}
+table.statTable caption a, table.statTable caption a:visited {
+  text-decoration: none;
+  color:#000;
+}
+table.statTable caption a:hover {
+  text-decoration: underline;
+  color:#004;
+}
+table.statTable tbody tr td div {
+  background-color:#558;
+  text-align:center;
+  padding-top:1px;
+}
+table.statTable tbody tr td {
+  background-color:#334;
+  text-align:right;
+  font-family:monospace;
+  font-size:8pt;
+  border-top:1px solid #445;
+  border-left:1px solid #445;
+  border-right:1px solid #002;
+  border-bottom:1px solid #002;
+}
+table.statTable tbody tr td:last-child {
+  width:40%;
+  color:#fff;
+}
+table.statTable tbody tr td:first-child {
+  width:8%;
+  color:#88a;
+  font-weight:bold;
+}
+
+.copyright {
+  font-family:monospace;
+  font-size:10pt;
+  color:#88a;
+}
+.copyright a, .copyright a:visited {
+  text-decoration: none;
+  color:#66c;
+}
+.copyright a:hover {
+  text-decoration: underline;
+}
+
