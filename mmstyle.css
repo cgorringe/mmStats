@@ -8,6 +8,14 @@ body {
 }
 img { border:0; }
 
+a, a:visited {
+  text-decoration: none;
+  color: #88b;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 h1,h2,h3,h4,h5,h6 {
   margin:0; padding:0;
 }
@@ -32,56 +40,81 @@ h2 a:hover {
   clear:both;
 }
 
-table.statTable {
+table.tabMonth { background-color:#334; }
+table.tabTotal { background-color:#433; }
+table.tabAll {
   border-collapse:separate;
   border-spacing:0;
-  background-color:#334;
   color:#fff;
   /* width:30%; */
 }
-table.statTable th,td {
+
+table.tabAll th,td {
   padding:2px 4px;
 }
-table.statTable caption {
-  padding:2px 1em;
-  font-weight:bold;
-  color:#000;
+
+table.tabMonth caption {
   background-color:#88a;
   border-top:1px solid #bbd;
   border-left:1px solid #bbd;
   border-right:1px solid #002;
   border-bottom:1px solid #002;
 }
-table.statTable caption a, table.statTable caption a:visited {
+table.tabTotal caption {
+  background-color:#a88;
+  border-top:1px solid #dbb;
+  border-left:1px solid #dbb;
+  border-right:1px solid #200;
+  border-bottom:1px solid #200;
+}
+table.tabAll caption {
+  padding:2px 1em;
+  font-weight:bold;
+  color:#000;
+}
+table.tabAll caption a, table.tabAll caption a:visited {
   text-decoration: none;
   color:#000;
 }
-table.statTable caption a:hover {
-  text-decoration: underline;
-  color:#004;
-}
-table.statTable tbody tr td div {
-  background-color:#558;
+table.tabMonth caption a:hover { color:#004; }
+table.tabTotal caption a:hover { color:#400; }
+table.tabAll   caption a:hover { text-decoration: underline; }
+
+table.tabMonth tbody tr td div { background-color:#558; }
+table.tabTotal tbody tr td div { background-color:#855; }
+table.tabAll   tbody tr td div {
   text-align:center;
   padding-top:1px;
 }
-table.statTable tbody tr td {
+
+table.tabMonth tbody tr td {
   background-color:#334;
-  text-align:right;
-  font-family:monospace;
-  font-size:8pt;
   border-top:1px solid #445;
   border-left:1px solid #445;
   border-right:1px solid #002;
   border-bottom:1px solid #002;
 }
-table.statTable tbody tr td:last-child {
+table.tabTotal tbody tr td {
+  background-color:#433;
+  border-top:1px solid #544;
+  border-left:1px solid #544;
+  border-right:1px solid #200;
+  border-bottom:1px solid #200;
+}
+table.tabAll tbody tr td {
+  text-align:right;
+  font-family:monospace;
+  font-size:8pt;
+}
+table.tabAll tbody tr td:last-child {
   width:40%;
   color:#fff;
 }
-table.statTable tbody tr td:first-child {
+
+table.tabMonth tbody tr td:first-child { color:#88a; }
+table.tabTotal tbody tr td:first-child { color:#a88; }
+table.tabAll   tbody tr td:first-child {
   width:8%;
-  color:#88a;
   font-weight:bold;
 }
 
